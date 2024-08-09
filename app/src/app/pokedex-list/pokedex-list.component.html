@@ -1,0 +1,11 @@
+<p>pokedex-list works!</p>
+<div>
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Search Pokémon" />
+  <button (click)="searchPokemons()">Search</button>
+</div>
+
+<div *ngFor="let pokemon of pokemons">
+  <p (click)="viewDetails(pokemon)">{{ pokemon.name }}</p>
+</div>
+
+<button (click)="loadMore()">Load More</button>

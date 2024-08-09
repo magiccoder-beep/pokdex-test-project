@@ -1,0 +1,12 @@
+<div *ngIf="pokemon">
+  <h2>{{ pokemon.name | titlecase }}</h2>
+  <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
+  <p>Height: {{ pokemon.height }}</p>
+  <p>Weight: {{ pokemon.weight }}</p>
+  <p>Types: {{ types }}</p>
+</div>
+
+<!-- Show a loading or error message if no Pokémon data -->
+<div *ngIf="!pokemon">
+  <p>Loading...</p>
+</div>

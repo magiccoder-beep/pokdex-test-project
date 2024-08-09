@@ -1,0 +1,36 @@
+# compiled output
+**/dist/
+**/tmp/
+**/out-tsc/
+/pkg
+
+# dependencies
+**/node_modules/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# logging
+logs/
+npm-debug.log
+yarn-error.log
+
+# system Files
+.DS_Store
+Thumbs.db
+
+# angular
+.angular/
